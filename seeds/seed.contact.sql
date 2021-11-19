@@ -1,0 +1,4 @@
+INSERT INTO contact (id, contact_events_id, church, logo, "connect", "address", website, pastor_name, pastor_title, pastor_email, associate_name, associate_title, associate_email)
+VALUES
+  (1, 1, 'The Exchange Church', '.../img/logo-drop.png','Thank you for joining us for worship today! If you are a newcomer to The Exchange Church, welcome! We hope that our corporate celebration service is an encouragement to you and that the grace and peace of Christ meet you where you are today. We want to let you know that this is a safe place for you to ask questions, explore truth, and discover the love and power of God together with others.', '2341 W Lincoln Ave Anaheim, CA 92801', 'http://www.the-exchange-church.com', 'Joe Suh', 'Lead Pastor', 'pastorjoe@the-exchange-church.com', 'Randy Cho', 'Associate Pastor', 'randy@the-exchange-church.com');
+  

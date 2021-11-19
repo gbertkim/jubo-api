@@ -1,0 +1,41 @@
+{
+  "name": "jubo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require test/setup.js",
+    "dev": "nodemon src/server.js",
+    "migrate": "postgrator --config postgrator-config.js",
+    "migrate:test": "env NODE_ENV=test npm run migrate",
+    "migrate:production": "env SSL=true DATABASE_URL=$(heroku config:get DATABASE_URL) npm run migrate",
+    "start": "node src/server.js",
+    "predeploy": "npm audit && npm run migrate:production",
+    "deploy": "git push heroku main"
+  },
+  "keywords": [],
+  "engines": {
+    "node": "16.11.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "knex": "^0.95.5",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.0",
+    "postgrator-cli": "^4.0.0",
+    "uuid": "^3.3.3",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^9.1.2",
+    "nodemon": "^2.0.12",
+    "supertest": "^4.0.2"
+  }
+}

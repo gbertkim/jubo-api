@@ -1,0 +1,6 @@
+INSERT INTO announcements (id, announcement_events_id, "date", "time", title, "location", "address", "description", "url")
+VALUES
+  (1, 1, 'Sept 18, 2021', '9:00 pm', 'Church Park Day', 'La Mirada Park', '1509 Summit Cirlce, Fullerton, CA 92833', 'Come have outdoor park day with us as we have free bbq and activities planned.', 'https://google.com'),
+  (2, 1, 'Sept 18, 2021', '5:00 pm', 'Taco Day', 'King Taco', '15916 Lakewood Blvd, Bellflower, CA 90706', 'One of our favorite food for our church is tacos! Join us for some fellowship after service.', 'https://google.com'),
+  (3, 1, 'Sept 17, 2021', '9:00 am', 'Prayer Night', 'Member House', '1487 Atherton Cir, Fullerton, CA 92833', 'Come join us for a night of prayer and praise as we pray for topics like our city, friends, and family.', 'https://google.com'),
+  (4, 1, 'Sept 25, 2021', '9:00 pm', 'Missions', 'Mexico', 'Rosarito Mexico', 'For a week long, our missions team will be in Mexico. Please pray for them as they go and spread the word of God.', 'https://google.com');
