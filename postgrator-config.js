@@ -12,7 +12,7 @@ module.exports = {
     ? process.env.TEST_DATABASE_URL
     : process.env.DATABASE_URL,
   // "ssl": !!process.env.SSL,
-  "ssl":  true || {
+  "ssl": {
     "rejectUnauthorized": false
  }
 }
