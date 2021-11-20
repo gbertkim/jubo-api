@@ -12,7 +12,8 @@ const contactRouter = require('./contact/contact-router')
 
 const app = express()
 app.use(cors({
-  origin: true
+  origin: true,
+  credentials: true
 }))
 app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
   skip: () => NODE_ENV === 'test'
