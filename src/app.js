@@ -11,7 +11,9 @@ const announcementsRouter = require('./announcements/announcements-router')
 const contactRouter = require('./contact/contact-router')
 
 const app = express()
-app.use(cors())
+app.use(cors({
+  origin: 'https://jubo.vercel.app/'
+}))
 app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
   skip: () => NODE_ENV === 'test'
 }))
