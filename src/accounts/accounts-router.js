@@ -24,6 +24,9 @@ const userIdentifier = account => ({
 })
 accountsRouter
   .route('/check')
+  .get((req, res, next) => {
+    res.send('Hello, world!')
+  })
   .post(jsonParser, (req, res, next) => {
     const {user_name, user_pass} = req.body
     const checkAccount = {user_name, user_pass}
