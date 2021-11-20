@@ -12,7 +12,7 @@ const contactRouter = require('./contact/contact-router')
 
 const app = express()
 app.use(cors({
-  origin: 'https://jubo.vercel.app/'
+  origin: true
 }))
 app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
   skip: () => NODE_ENV === 'test'
