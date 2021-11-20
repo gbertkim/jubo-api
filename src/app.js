@@ -10,12 +10,12 @@ const accountsRouter = require('./accounts/accounts-router')
 const announcementsRouter = require('./announcements/announcements-router')
 const contactRouter = require('./contact/contact-router')
 
+app.use(cors())
 const app = express()
 
 app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
   skip: () => NODE_ENV === 'test'
 }))
-app.use(cors())
 app.use(helmet())
 
 app.use('/api/accounts', accountsRouter)
